@@ -1,0 +1,821 @@
+/* Hepatoburn Landing Page Styles
+   Created for affiliate marketing campaign */
+/* Base Styles and Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #6b0000;
+
+    /* Darker burgundy for headings - improved contrast */
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+/* Button Styles */
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+
+    /* Brighter gold color for buttons */
+    color: #5a0000;
+
+    /* Darker burgundy text for better contrast */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #d4a900;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.order-button {
+    display: block;
+    background-color: #ffcc00;
+    color: #5a0000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-button:hover {
+    background-color: #d4a900;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #6b0000, #a30000);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: #ffe066;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.trust-indicator {
+    margin-top: 30px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Problem Section */
+.problem {
+    background-color: #f5f5f5;
+}
+
+.problem-points {
+    margin: 30px 0;
+}
+
+.problem-point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.problem-point i {
+    color: #8b0000;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.transition-text {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Scientific Discovery Section */
+.discovery {
+    background-color: white;
+}
+
+.discovery h2 {
+    text-align: center;
+}
+
+.discovery h3 {
+    text-align: center;
+    color: #f4efef;
+    margin-bottom: 40px;
+}
+
+.discovery-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.discovery-image {
+    flex: 1;
+    text-align: center;
+}
+
+.discovery-text {
+    flex: 1;
+}
+
+.research-findings {
+    margin-top: 30px;
+}
+
+.finding {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.finding i {
+    color: #2e8b57;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+/* Solution Section */
+.solution {
+    background-color: #f5f5f5;
+}
+
+.solution h2,
+.solution h3 {
+    text-align: center;
+}
+
+.solution-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.solution-image {
+    flex: 1;
+    text-align: center;
+}
+
+.solution-text {
+    flex: 1;
+}
+
+.benefits {
+    margin-top: 30px;
+}
+
+.benefit {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.benefit i {
+    color: #2e8b57;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background-color: white;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.step {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #8b0000;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.step h3 {
+    margin-top: 10px;
+}
+
+/* Ingredients Section */
+.ingredients {
+    background-color: #f5f5f5;
+}
+
+.ingredients h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.formula-columns {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.formula {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formula h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ingredient {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.ingredient:last-child {
+    border-bottom: none;
+}
+
+.ingredient img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.ingredient-info h4 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.formula-description {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Benefits Section */
+.benefits-section {
+    background-color: white;
+}
+
+.benefits-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.benefit-box {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.benefit-box i {
+    font-size: 40px;
+    color: #6b0000;
+    margin-bottom: 20px;
+}
+
+.benefit-box h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f5f5f5;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.testimonial-image {
+    flex: 1;
+    max-width: 300px;
+}
+
+.testimonial-content {
+    flex: 2;
+}
+
+.testimonial-author {
+    font-weight: 700;
+    color: #6b0000;
+    margin-top: 15px;
+}
+
+.success-metrics {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Features Section */
+.features {
+    background-color: white;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature {
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+    font-size: 40px;
+    color: #6b0000;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Guarantee Section */
+.guarantee {
+    background-color: #f5f5f5;
+}
+
+.guarantee-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.guarantee-image {
+    flex: 1;
+    text-align: center;
+}
+
+.guarantee-text {
+    flex: 2;
+}
+
+/* Pricing Section */
+.pricing {
+    background-color: white;
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.packages {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.package {
+    flex: 1;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.best-value {
+    border: 3px solid #e6b800;
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.best-value-tag {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffcc00;
+    color: #5a0000;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.package h3 {
+    margin-bottom: 5px;
+}
+
+.supply {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.package-image {
+    margin: 20px 0;
+}
+
+.price {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.per-bottle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #6b0000;
+}
+
+.total-price {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.recommendation,
+.limited-offer {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.secure-payment {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.payment-icons {
+    margin-top: 15px;
+}
+
+.payment-icons i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #666;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: #f5f5f5;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.faq-toggle {
+    color: #8b0000;
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 20px 20px;
+}
+
+/* Final CTA Section */
+.final-cta {
+    background: linear-gradient(to right, #6b0000, #a30000);
+    color: white;
+    text-align: center;
+}
+
+.final-cta h2,
+.final-cta h3 {
+    color: white;
+}
+
+.final-cta h3 {
+    color: #ffe066;
+    margin-bottom: 40px;
+}
+
+.final-cta-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.final-cta-text {
+    flex: 2;
+    text-align: left;
+}
+
+.final-cta-image {
+    flex: 1;
+}
+
+.final-trust-elements {
+    margin-top: 30px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.disclaimer {
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    color: #999;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .discovery-content,
+    .solution-content,
+    .guarantee-content,
+    .final-cta-content {
+        flex-direction: column;
+    }
+
+    .formula-columns {
+        flex-direction: column;
+    }
+
+    .benefits-grid,
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .packages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .best-value {
+        transform: none;
+    }
+
+    .testimonial {
+        flex-direction: column;
+    }
+
+    .testimonial-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .benefits-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-button,
+    .order-button {
+        width: 100%;
+    }
+}
+
+/* Placeholder for images */
+.placeholder-image {
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-weight: 600;
+    border-radius: 5px;
+}
